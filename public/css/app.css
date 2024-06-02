@@ -1,0 +1,252 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    background-color: #ffffff;
+    font-size: Helvetica, sans-serif;
+    font-size: 16px;
+    min-height: 100vh; /* Define a altura mínima do corpo para 100% da altura da viewport */
+    margin: 0;
+}
+
+.condo {
+    color: white;
+}
+
+.tec {
+    color: black;
+}
+
+header{
+    background-color: #003283;
+    padding: 2%;
+    padding-top: 20px;  
+    z-index: 999; 
+    box-shadow: 0 26px 58px 0 rgba(0, 0, 0, 0.22), 0 5px 14px 0 rgba(0, 0, 0, 0.18);
+}
+
+#topo div {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens no centro */
+}
+
+#topo img {
+    margin-right: 50px; /* Espaçamento entre a imagem e o texto */
+}
+
+.condo {
+    color: white;
+}
+
+.tec {
+    color: black;
+}
+
+.corpo {
+    margin-left: 250px;
+    margin-right: 250px;
+    padding-top: 30px; /* Altura do header */
+    padding-bottom: 30px; /* Altura do footer */
+    padding-left: 30px;
+    padding-right: 30px; /* Defina a altura do elemento para ocupar toda a altura da tela */
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    box-shadow: 0 26px 58px 0 rgba(0, 0, 0, 0.22), 0 5px 14px 0 rgba(0, 0, 0, 0.18);
+}
+
+#topo .container {
+    display: flex;
+    justify-content: space-between; /* Distribui os elementos uniformemente ao longo do eixo principal */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.menu li {
+    margin-right: 30px; /* Adiciona espaçamento entre os itens */
+    transition: color 0.3s, font-size 0.3s; /* Adiciona transição para a cor e o tamanho da fonte */
+}
+
+.menu li:hover {
+    color: yellow; /* Muda a cor ao passar o mouse */
+}
+
+.conteudo{
+    align-items: center;
+    text-align: center;
+}
+
+footer {
+    margin-top: auto; /* Coloca o footer no final da página */
+    background-color: #003283;
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Adiciona algum espaço interno ao footer */
+}
+
+
+.botao{
+    background-color: #003283;
+    padding: 10px;
+    color: white;
+}
+
+.botao:hover {
+    color: yellow; 
+}
+
+.container-imagem {
+    display: flex;
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    align-items: center;
+    
+}
+
+.container-imagem img {
+    margin-right: 40px;
+    margin-left: 40px; /* Espaçamento entre as imagens */
+    border: 1px solid #003283;
+}
+
+.texto {
+    text-align: justify; /* Justifica o texto */
+}
+
+.bv{
+    text-align: center;
+    font-weight: bold; /* Adiciona negrito */
+    font-size: 22px;
+}
+
+.quatro {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center; /* Altera para centralizar os itens */
+    gap: 20px; /* Adiciona espaço entre os itens */
+    padding-left: 250px; /* Alinha o conteúdo para o centro, deixando espaço igual nas laterais */
+    padding-right: 250px; /* Alinha o conteúdo para o centro, deixando espaço igual nas laterais */
+}
+
+.item {
+    width: calc(50% - 20px); /* Ajusta a largura para caber duas divs por linha com espaçamento */
+    margin-bottom: 20px; /* Espaçamento entre as linhas */
+    padding: 30px; /* Adiciona padding interno */
+    transition: background-color 0.3s ease; /* Adiciona transição suave para o efeito de hover */
+    display: flex; /* Adiciona display flex para centralizar a imagem e o texto */
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    justify-content: center; /* Centraliza os elementos verticalmente */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    box-shadow: 0 26px 58px 0 rgba(0, 0, 0, 0.22), 0 5px 14px 0 rgba(0, 0, 0, 0.18);
+}
+
+.item img {
+    margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+.item span {
+    font-size: 18px; /* Define o tamanho da fonte do texto */
+}
+
+
+.imgbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: filter 0.3s ease;
+}
+
+.imgbutton:hover {
+    filter: brightness(0.7);
+}
+
+.opcoes {
+    border-radius: 20px;
+}
+
+.opcoes[type="text"],
+.opcoes[type="text"]:focus {
+    border-radius: 20px; /* Certifica-se de que apenas os inputs de texto tenham a borda arredondada */
+}
+
+.solimarg{
+    padding: 10px;
+    margin-left: 50px;
+}
+.suporte{
+    display: flex; /* Define o display como flexível */
+    justify-content: space-between; /* Alinha os itens com espaço entre eles */
+}
+
+.att{
+    display: flex; /* Define o display como flexível */
+    justify-content: space-between; /* Alinha os itens com espaço entre eles */
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.solicitacao,
+.solicitacao-info 
+.solicitacao-att{
+    flex: 1;
+}
+
+.solicitacao {
+    margin-right: 10px;
+}
+
+.solicitacao-att{
+    margin-right: 20px;
+    background-color: #f7f7f76d;
+}
+
+.solicitacao-info {
+    display: flex;
+    flex-direction:column;
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    margin-left: 200px; /* Adiciona margem automática para centralizar na coluna */
+}
+
+.espacado {
+    padding-right: 150px; /* Adiciona 20 pixels de espaço à esquerda */
+  }
+.espacado2 {
+    padding-right: 140px; /* Adiciona 20 pixels de espaço à esquerda */
+  }
+
+.pesquisa_box{
+    margin-left: 350px;
+    margin-right: 350px;
+    background-color: #fff;
+    height: 50px;
+    padding: 10px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 26px 58px 0 rgba(0, 0, 0, 0.22), 0 5px 14px 0 rgba(0, 0, 0, 0.18);
+}
+
+.pesquisa_text{
+    background: none;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+}
+
+.pesquisa_button{
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: none;
+}
